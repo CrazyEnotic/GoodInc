@@ -1,78 +1,10 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-html {height: 100%;}
-body {
-	height: 100%;
-	font: 14px/24px Arial, Tahoma, sans-serif;
-	background-color: #ebebeb;
-}
-ol, ul {list-style: none;}
-* {
-	margin: 0;
-	padding: 0;
-	outline: none;
-
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-a, a:hover {text-decoration: none;}
-
-@font-face {
-    font-family: 'NexaHeavy';
-    src: url('../fonts/NexaHeavy.eot');
-    src: url('../fonts/NexaHeavy.eot') format('embedded-opentype'),
-         url('../fonts/NexaHeavy.woff2') format('woff2'),
-         url('../fonts/NexaHeavy.woff') format('woff'),
-         url('../fonts/NexaHeavy.ttf') format('truetype'),
-         url('../fonts/NexaHeavy.svg#NexaHeavy') format('svg');
-}
-
-@font-face {
-    font-family: 'NexaLight';
-    src: url('../fonts/NexaLight.eot');
-    src: url('../fonts/NexaLight.eot') format('embedded-opentype'),
-         url('../fonts/NexaLight.woff2') format('woff2'),
-         url('../fonts/NexaLight.woff') format('woff'),
-         url('../fonts/NexaLight.ttf') format('truetype'),
-         url('../fonts/NexaLight.svg#NexaLight') format('svg');
-}
-
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-.clearfix:after {clear: both;}
-
-.left {float:left;}
-.right {float:right;}
-.text-right {float:right;}
-
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 10px;
 }
+
+/*-------Header------*/
 
 #header {
     background: #373737;
@@ -228,9 +160,10 @@ a, a:hover {text-decoration: none;}
     overflow: hidden;
 }
 
+/*----Section 1-------*/
+
 .feature-img img {
     display: block;
-    width: 100%;
     height: auto;
 }
 
@@ -274,7 +207,6 @@ a, a:hover {text-decoration: none;}
     font-size: 12px;
     color: #a7a7a7;
 }
-
 .date {
     display: inline-block;
     padding-left: 25px;
@@ -282,6 +214,8 @@ a, a:hover {text-decoration: none;}
     color: #a7a7a7;
     background: url(../image/clock-date.png) no-repeat left center;
 }
+
+/*----Section 2-------*/
 
 .article-item {
     float: left;
@@ -331,6 +265,8 @@ h3.title a:hover {
     color: #646464;
 }
 
+/*----Section 3-------*/
+    /*----Right-------*/
 .zoom {
     position: absolute;
     top: 0;
@@ -372,6 +308,8 @@ h3.title a:hover {
 .news-bl h3.title a:hover {
     color: #ccc;
 }
+
+    /*----Left-------*/
 
 .news-item {
     margin-bottom: 15px;
@@ -446,17 +384,80 @@ h4.title-news a {
 }
 
 .news-item.small {
+    padding-top: 15px;
+    padding-bottom: 15px;
     margin-bottom: 8px;
+    line-height: 16px;
 }
-
 h4.title-news.little {
     font-size: 18px;
 }
-
 h4.title-news.little a {
     color: inherit;
 }
-
 .news-panel.small {
     margin-bottom: 0;
+}
+.read_more {
+    display: block;
+    text-align: center;
+    margin: 30px 0 25px;
+}
+read-more p {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font: bold 14px/21px Arial, sans-serif;
+    color: #bdbdbd;
+}
+
+/*----Text BOX-----*/
+
+.text-box {
+    background: #fff;
+    padding: 35px 50px 30px 35px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dedede;
+}
+.title-box {
+    padding-bottom: 30px;
+    font: bold 30px/25px Arial, sans-serif;
+    color: #707070;
+}
+.title-box a {
+    color: inherit;
+}
+.title-box a:hover {
+    color: #000;
+}
+.text-box p {
+    font: bold 14px/24px Arial, sans-serif;
+    color: #707070;
+}
+.text-box p>span {
+    color: #f26c4f;
+}
+.text-box .text-box-regular{
+    font: bold 14px/24px Arial, sans-serif;
+    color: #707070;
+}
+.text-box img {
+    position: relative;
+    height: 305px;
+    width: 620px;
+    background: #fff;
+    overflow: hidden;
+}
+.text-box-footer {
+    background: #efefef;
+    border: 1px solid #dedede;
+    padding: 15px;
+    font-size: 12px;
+    color: #a2a2a2;
+    margin: -30px 0 30px;
+}
+.box-like span {
+    padding-right: 8px;
+}
+.text-box-container img {
+    margin-bottom: -7px;
 }
